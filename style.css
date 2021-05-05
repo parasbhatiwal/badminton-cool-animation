@@ -1,0 +1,99 @@
+body{background-color: #fefefe;} /*
+#name{
+    transform: rotate(180deg);
+  width: fit-content;
+  animation-name: name;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.3,0.4,0.5, 1,0.5,0.4, 0.3);
+}
+
+@keyframes name{
+    0%{margin-left: 20%;    transform: rotate(0deg);margin-top: 250px;
+    }
+    50%{margin-top: 10px;margin-left: 52.5%;}
+   
+    100%{margin-left: 75%;    transform: rotate(180deg);margin-top: 250px;
+    }
+}
+*/
+
+
+.shutter{width: 26px;
+height: 26px;
+animation-name: shutter;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.3, 1, 0.3);}
+
+
+@keyframes shutter{
+    0%{transform: rotate(135deg);}
+    100%{transform: rotate(270deg);}
+
+} 
+body{text-align: center;}
+
+#line{text-align: left;
+display: inline-flex;
+margin-top: 400px;
+}
+
+.line{height: 50px;
+width: 600px;
+animation-name: line;
+animation-duration: 1.5s;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;}
+
+@keyframes line{
+    0%{transform: rotate(29deg);}
+    100%{transform: rotate(150deg)}
+}
+
+#nets{width: 150px;
+height: 335px;
+margin-left: -372px;
+margin-top: -250px;
+position: fixed;}
+
+.batright{transform: skew(-30deg);
+width: 130px;
+height: 200px;
+margin-top: -380px;
+margin-left: -110px;
+animation-name: batright;
+animation-duration: 1.5s;
+animation-delay: 0s;
+animation-direction: alternate;
+animation-iteration-count: infinite;}
+
+@keyframes batright{
+  0%{transform: skew(-30deg);}
+  98%{transform: skew(-30deg);}
+    100%{transform: skew(-5deg);}
+}
+
+.batleft{transform: skew(15deg);
+  width: 130px;
+  height: 200px;
+  margin-top: -380px;
+  margin-left: -635px;
+  animation-name: batleft;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;}
+  
+  @keyframes batleft{
+   
+    0%{transform: skew(15deg);}
+    98%{transform: skew(15deg);}
+    100%{transform: skew(-10deg);}
+  }
